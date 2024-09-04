@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Controle de Estoque</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+</head>
+<body class="body-bg">
+    <div class="navbar">
+        <nav class="menu-navegacao">
+            <ul>
+                <li class="Titulo">Restaurante Valorant</li>
+                <li class="dropdown">
+                    <a class="navbar-text" href="menu.html">Menu</a>
+                    <ul class="dropdown-content">
+                        <li><a href="Gestao de pedidos/bebidas.html">Pedidos</a></li>
+                        <li><a href="financeiro.html">Financeiro</a></li>
+                        <li><a href="list-funcionarios.html">Cadastro de funcionario</li>
+                        <li><a href="transaçoes.html">Registro de vendas</a></li>
+                        <li><a href="CadastroItens.html">Cadastro de produtos</a></li>
+                        <li><a href="ControleEstoque.html">Controle de estoque</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <div class="container-tabela">
+        <h2 class="centered-title">
+            Controle de estoque
+        </h2> 
+        <table class="tabela-estoque" id="tabela_estoque">
+
+        <thead>
+            <tr>
+                <th class="produto">Produto</th>
+                <th class="produto">Quantidade</th>
+                <th class="excluir">Excluir</th>
+            </tr>
+        </thead>
+        <tbody>
+           
+        </tbody>
+    </table>
+    <div class="container">
+        <button id="adicionar-produto" class="botao-estoque">+ Adicionar produto</button>
+   </div>
+
+</div>
+
+<div id="myModal" class="janela-estoque">
+    <div class="janela-conteudo">
+        <span class="fechar">&times;</span>
+        <h2 class="centered-title">Adicionar novo item ao estoque</h2>
+        <label for="campoNome" class="sub-janela">Nome:</label>
+        <input class="inserir-produto" type="text" id="campoNome" placeholder="Digite o nome do produto">
+        <label for="campoQntd" class="sub-janela">Quantidade:</label>
+        <input class="inserir-produto" type="number" min="0" id="campoQntd" placeholder="Digite a quantidade do produto">
+        <div class="centered-bt">
+            <button class="botaoAdicionarProduto" id="botaoAdicionarProduto">Adicionar produto</button>
+        </div>
+    </div>
+</div>
+
+
+<script src="js/script.js"></script>
+   
+    
+</body>
+</html>
